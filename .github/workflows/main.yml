@@ -17,7 +17,7 @@ jobs:
          echo $(pwd)
          bash test.sh -xe
          echo "End"
-         cp -r /home/runner/work/_temp/_github_home/.m2 $HOME
+         cp -r /home/runner/work/_temp/_github_home/ $HOME
         #id: hello
         #with:
           #who-to-greet: 'Mona the Octocat'
