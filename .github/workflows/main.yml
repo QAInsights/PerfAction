@@ -12,7 +12,7 @@ jobs:
       - name: Run the test
         run: |
          echo "Beginning"
-         bash ./test.sh
+         bash test.sh -xe
          echo "End"
         #id: hello
         #with:
