@@ -10,7 +10,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Build Image
-        uses: qainsights/PerfMaster@master
+        uses: QAInsights/PerfAction@master
       - name: Run the JMeter test
         run: |
          echo "Beginning"
