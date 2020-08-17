@@ -3,17 +3,17 @@ on: [push]
 jobs:
   hello_world_job:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: A job to run JMeter script
     steps:
       # To use this repository's private action,
       # you must check out the repository
       - name: Checkout
         uses: QAInsights/PerfAction@master
-      - name: Run the test
+      - name: Run the JMeter test
         run: |
          echo "Beginning"
          echo $(pwd)
-         echo $(ls)
+         cat /home/runner/work/PerfAction/PerfAction/test.sh
          echo "End"
         #id: hello
         #with:
