@@ -1,4 +1,8 @@
 # action.yml
+on:
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron:  '*/1 * * * *'
 name: 'Hello World'
 description: 'Greet someone and record the time'
 inputs:
