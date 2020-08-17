@@ -8,7 +8,7 @@ jobs:
       # To use this repository's private action,
       # you must check out the repository
       - name: Checkout
-        uses: qainsights/PerfAction@v1
+        uses: QAInsights/PerfAction
       - name: Hello world action step
         uses: ./ # Uses an action in the root directory
         id: hello
