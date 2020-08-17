@@ -13,7 +13,8 @@ jobs:
         run: |
          echo "Beginning"
          echo $(pwd)
-         cat /home/runner/work/PerfAction/PerfAction/test.sh
+         bash test.sh -x
+         ./test.sh
          echo "End"
         #id: hello
         #with:
