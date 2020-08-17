@@ -4,4 +4,4 @@
 #
 # This script expects the standdard JMeter command parameters.
 #
-echo "this is entrypoint"
+echo $(pwd)
