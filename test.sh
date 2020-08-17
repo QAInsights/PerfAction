@@ -1,3 +1,3 @@
 #!/bin/bash
 echo "This is in test.sh"
-docker images
+docker run jmeter
