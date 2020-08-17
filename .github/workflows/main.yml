@@ -8,12 +8,12 @@ jobs:
       # To use this repository's private action,
       # you must check out the repository
       - name: Checkout
-        uses: QAInsights/PerfAction@master
+        uses: actions/checkout@master
       - name: Run the JMeter test
         run: |
          echo "Beginning"
          echo $(pwd)
-         bash test.sh -x
+         bash test.sh -xe
          ./test.sh
          echo "End"
         #id: hello
