@@ -9,12 +9,13 @@ jobs:
       # you must check out the repository
       - name: Checkout
         uses: actions/checkout@v2
+      - name: Build Image
+        uses: qainsights/PerfMaster@master
       - name: Run the JMeter test
         run: |
          echo "Beginning"
          echo $(pwd)
          bash test.sh -xe
-         ./test.sh
          echo "End"
         #id: hello
         #with:
