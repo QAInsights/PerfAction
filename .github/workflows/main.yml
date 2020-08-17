@@ -10,10 +10,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Build Image
-        uses: QAInsights/PerfAction@master
-        with:
-          name: jmeter
-          tag: latest
+        run: docker build . --file Dockerfile --tag jmeter        
       - name: Run the JMeter test
         run: |
          echo "Beginning"
