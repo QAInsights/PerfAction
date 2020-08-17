@@ -8,7 +8,7 @@ jobs:
       # To use this repository's private action,
       # you must check out the repository
       - name: Checkout
-        uses: actions/PerfAction@master
+        uses: actions/checkout@v2
       - name: Run the JMeter test
         run: |
          echo "Beginning"
