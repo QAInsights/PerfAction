@@ -1,11 +1,16 @@
 #!/bin/bash
-#
-# Run JMeter Docker image with options 
 
-NAME="jmeter"
-IMAGE="justb4/jmeter:5.1.1"
+set -e
+freeMem=`awk '/MemFree/ { print int($2/1024) }' /proc/meminfo`
+s=$(($freeMem/10*8))
+x=$(($freeMem/10*8))
+n=$(($freeMem/10*2))
+export JVM_ARGS="-Xmn${n}m -Xms${s}m -Xmx${x}m"
 
-# Finally run
-sudo docker stop ${NAME} > /dev/null 2>&1
-sudo docker rm ${NAME} > /dev/null 2>&1
-sudo docker run --name ${NAME} -i -v ${PWD}:${PWD} -w ${PWD} ${IMAGE} $@
+echo "START Running Jmeter on `date`"
+echo "JVM_ARGS=${JVM_ARGS}"
+echo "jmeter args=$@"
+
+# Keep entrypoint simple: we must pass the standard JMeter arguments
+jmeter $@
+echo "END Running Jmeter on `date`"

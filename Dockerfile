@@ -35,4 +35,4 @@ COPY / /
 
 WORKDIR	${JMETER_HOME}
 
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["/run.sh"]
