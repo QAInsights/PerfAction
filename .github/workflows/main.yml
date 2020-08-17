@@ -13,6 +13,7 @@ jobs:
         run: |
          echo "Beginning"
          echo $(pwd)
+         ls
          echo "End"
         #id: hello
         #with:
