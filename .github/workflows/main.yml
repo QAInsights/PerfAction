@@ -10,7 +10,10 @@ jobs:
       - name: Checkout
         uses: QAInsights/PerfAction@master
       - name: Run the test
-        run: ./test.sh # Uses an action in the root directory
+        run: |
+         echo "Beginning"
+         bash ./test.sh
+         echo "End"
         #id: hello
         #with:
           #who-to-greet: 'Mona the Octocat'
