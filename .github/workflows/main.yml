@@ -6,7 +6,7 @@ jobs:
     name: A job to run JMeter script
     steps:
       # To use this repository's private action,
-      # you must check out the repository
+      # you must check out the repository 
       - name: Checkout
         uses: actions/checkout@v2
       - name: Build Image
