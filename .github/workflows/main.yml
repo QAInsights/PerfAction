@@ -9,8 +9,10 @@ jobs:
       - name: Build Image
         run: docker pull egaillardon/jmeter       
       - name: Run Container
+        with:
+          test-plan-name: T01_HomePageLoad.jmx
         run: |
-          docker run --interactive --rm --volume `pwd`:/jmeter egaillardon/jmeter --nongui --testfile T01_HomePageLoad.jmx --logfile result.jtl                  
+          docker run --interactive --rm --volume `pwd`:/jmeter egaillardon/jmeter --nongui --testfile {{ inputs.test-plan-name }} --logfile result.jtl                  
       - name: Upload Results
         uses: actions/upload-artifact@v2
         with:
