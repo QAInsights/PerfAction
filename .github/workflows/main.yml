@@ -13,7 +13,7 @@ jobs:
         run: docker pull egaillardon/jmeter       
       - name: Run image
         run: |
-          docker run --interactive --tty --rm --volume `pwd`:/jmeter egaillardon/jmeter --nongui --testfile CSVSample.jmx --logfile result.jtl
+          docker run --interactive --rm --volume `pwd`:/jmeter egaillardon/jmeter --nongui --testfile CSVSample.jmx --logfile result.jtl
           ls
         #id: hello
         #with:
