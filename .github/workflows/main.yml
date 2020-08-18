@@ -10,13 +10,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Build Image
-        run: docker build . --file Dockerfile --tag jmeter        
-      - name: Run the JMeter test
-        run: |
-         echo "Beginning"
-         echo $(pwd)
-         bash test.sh -xe
-         echo "End"
+        run: docker pull justb4/jmeter        
+      - name: Run image
+        run: docker run jmeter      
         #id: hello
         #with:
           #who-to-greet: 'Mona the Octocat'
