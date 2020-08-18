@@ -14,6 +14,7 @@ jobs:
       - name: Run image
         run: |
           docker run --interactive --rm --volume `pwd`:/jmeter egaillardon/jmeter --nongui --testfile CSVSample.jmx --logfile result.jtl
+          cat result.jtl
           ls
         #id: hello
         #with:
