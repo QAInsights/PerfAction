@@ -14,7 +14,7 @@ jobs:
           TEST_PLAN_NAME: T01_HomePageLoad.jmx
       - name: Run Container
         run: |
-          docker run --interactive --rm --volume `pwd`:/jmeter egaillardon/jmeter --nongui --testfile $TEST_PLAN_NAME --logfile result.jtl                  
+          docker run --interactive --rm --volume `pwd`:/jmeter egaillardon/jmeter --nongui --testfile ${{ env.TEST_PLAN_NAME }} --logfile result.jtl                  
       - name: Upload Results
         uses: actions/upload-artifact@v2
         with:
