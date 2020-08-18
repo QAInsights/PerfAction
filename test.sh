@@ -1,5 +1,5 @@
 #!/bin/bash
 echo "This is in test.sh"
-docker run jmeter -n -t ./bin/examples/CSVSample.jmx -l mylog.log
+docker run --interactive --tty --rm --volume `pwd`:/jmeter egaillardon/jmeter --nongui --testfile CSVSample.jmx --logfile result.jtl
 echo $(pwd)
 docker ps -a
