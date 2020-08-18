@@ -1,16 +1,15 @@
 on: [push]
-
 jobs:
   jmeter_job:
     runs-on: ubuntu-latest
     name: A job to run JMeter script
     steps:      
-      - name: Checkout
-        uses: QAInsights/PerfAction@master
-        with:
-          test-plan-name: T01_HomePageLoad.jmx
-      - name: Upload Results
-        uses: actions/upload-artifact@v2
-        with:
-          name: jmeter-results
-          path: result.jtl
+    - name: Checkout
+      uses: QAInsights/PerfAction@master
+      with:
+        test-plan-name: T01_HomePageLoad.jmx
+    - name: Upload Results
+      uses: actions/upload-artifact@v2
+      with:
+        name: jmeter-results
+        path: result.jtl
