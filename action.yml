@@ -7,16 +7,5 @@ inputs:
     required: true
     default: 'T01_HomePageLoad.jmx'
 runs:
-  steps:      
-    - name: Checkout
-      uses: actions/checkout@v2
-    - name: Build Image
-      run: docker pull egaillardon/jmeter       
-    - name: Run Container
-      run: |
-        docker run --interactive --rm --volume `pwd`:/jmeter egaillardon/jmeter --nongui --testfile {{ inputs.test-plan-name }} --logfile result.jtl                  
-    - name: Upload Results
-      uses: actions/upload-artifact@v2
-      with:
-        name: jmeter-results
-        path: result.jtl
+  using: 'docker'
+  image: 'docker://egaillardon/jmeter'
