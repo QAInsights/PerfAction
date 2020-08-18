@@ -10,10 +10,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Build Image
-        run: docker pull justb4/jmeter        
+        run: docker pull egaillardon/jmeter       
       - name: Run image
         run: |
-          docker run justb4/jmeter:latest -n -t ./bin/examples/CSVSample.jmx -l mylog.log
+          docker run egaillardon/jmeter:latest -n -t ./bin/examples/CSVSample.jmx -l mylog.log
           ls
         #id: hello
         #with:
