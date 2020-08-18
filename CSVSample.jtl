@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<sample t="259" lt="0" ts="1597707789368" s="true" lb="Login as u1" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="15" ulp__buffer__fill="" ulp__lag__time="" ulp__play__time="" ulp__lag__ratio="" ulp__lag__ratio__wo__bf="" ulp__dwn__time=""/>
+<sample t="269" lt="0" ts="1597707789633" s="true" lb="Action = none" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="0" ulp__buffer__fill="" ulp__lag__time="" ulp__play__time="" ulp__lag__ratio="" ulp__lag__ratio__wo__bf="" ulp__dwn__time=""/>
+<sample t="239" lt="0" ts="1597707790112" s="true" lb="Action a" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="12" ulp__buffer__fill="" ulp__lag__time="" ulp__play__time="" ulp__lag__ratio="" ulp__lag__ratio__wo__bf="" ulp__dwn__time=""/>
+<sample t="239" lt="0" ts="1597707790369" s="true" lb="Action b" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="12" ulp__buffer__fill="" ulp__lag__time="" ulp__play__time="" ulp__lag__ratio="" ulp__lag__ratio__wo__bf="" ulp__dwn__time=""/>
+<sample t="233" lt="0" ts="1597707790617" s="true" lb="Action c" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="12" ulp__buffer__fill="" ulp__lag__time="" ulp__play__time="" ulp__lag__ratio="" ulp__lag__ratio__wo__bf="" ulp__dwn__time=""/>
+<sample t="225" lt="0" ts="1597707790864" s="true" lb="Action d" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="12" ulp__buffer__fill="" ulp__lag__time="" ulp__play__time="" ulp__lag__ratio="" ulp__lag__ratio__wo__bf="" ulp__dwn__time=""/>
+<sample t="204" lt="0" ts="1597707791099" s="true" lb="Logout" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="13" ulp__buffer__fill="" ulp__lag__time="" ulp__play__time="" ulp__lag__ratio="" ulp__lag__ratio__wo__bf="" ulp__dwn__time=""/>
+<sample t="154" lt="0" ts="1597707791304" s="true" lb="Action = &lt;EOF&gt;" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="0" ulp__buffer__fill="" ulp__lag__time="" ulp__play__time="" ulp__lag__ratio="" ulp__lag__ratio__wo__bf="" ulp__dwn__time=""/>
+<sample t="310" lt="0" ts="1597707791459" s="true" lb="Login as u2" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="15" ulp__buffer__fill="" ulp__lag__time="" ulp__play__time="" ulp__lag__ratio="" ulp__lag__ratio__wo__bf="" ulp__dwn__time=""/>
+<sample t="110" lt="0" ts="1597707791770" s="true" lb="Action = none" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="0" ulp__buffer__fill="" ulp__lag__time="" ulp__play__time="" ulp__lag__ratio="" ulp__lag__ratio__wo__bf="" ulp__dwn__time=""/>
+<sample t="227" lt="0" ts="1597707791887" s="true" lb="Logout" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="13" ulp__buffer__fill="" ulp__lag__time="" ulp__play__time="" ulp__lag__ratio="" ulp__lag__ratio__wo__bf="" ulp__dwn__time=""/>
+<sample t="207" lt="0" ts="1597707792115" s="true" lb="Action = &lt;EOF&gt;" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="0" ulp__buffer__fill="" ulp__lag__time="" ulp__play__time="" ulp__lag__ratio="" ulp__lag__ratio__wo__bf="" ulp__dwn__time=""/>
+
+</testResults>
