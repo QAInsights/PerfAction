@@ -4,16 +4,14 @@ jobs:
   jmeter_job:
     runs-on: ubuntu-latest
     name: A job to run JMeter script
-    steps:
-      
+    steps:      
       - name: Checkout
         uses: actions/checkout@v2
       - name: Build Image
         run: docker pull egaillardon/jmeter       
       - name: Run Container
         run: |
-          docker run --interactive --rm --volume `pwd`:/jmeter egaillardon/jmeter --nongui --testfile T01_HomePageLoad.jmx --logfile result.jtl
-          ls        
+          docker run --interactive --rm --volume `pwd`:/jmeter egaillardon/jmeter --nongui --testfile T01_HomePageLoad.jmx --logfile result.jtl                  
       - name: Upload Results
         uses: actions/upload-artifact@v2
         with:
