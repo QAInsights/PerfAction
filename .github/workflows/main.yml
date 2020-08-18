@@ -12,7 +12,7 @@ jobs:
       - name: Build Image
         run: docker pull justb4/jmeter        
       - name: Run image
-        run: docker run jmeter      
+        run: docker run justb4/jmeter:latest      
         #id: hello
         #with:
           #who-to-greet: 'Mona the Octocat'
