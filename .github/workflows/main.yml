@@ -14,7 +14,7 @@ jobs:
       - name: Run image
         run: |
           docker run --interactive --rm --volume `pwd`:/jmeter egaillardon/jmeter --nongui --testfile T01_HomePageLoad.jmx --logfile result.jtl
-          cat result.jtl                   
+          ls        
       - name: Upload Results
         uses: actions/upload-artifact@v2
         with:
