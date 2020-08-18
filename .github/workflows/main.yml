@@ -13,15 +13,10 @@ jobs:
         run: docker pull egaillardon/jmeter       
       - name: Run image
         run: |
-          docker run --interactive --rm --volume `pwd`:/jmeter egaillardon/jmeter --nongui --testfile CSVSample.jmx --logfile result.jtl
+          docker run --interactive --rm --volume `pwd`:/jmeter egaillardon/jmeter --nongui --testfile Example.jmx --logfile result.jtl
           cat result.jtl                   
       - name: Upload Results
         uses: actions/upload-artifact@v2
         with:
           name: jmeter-results
           path: result.jtl
-        #with:
-          #who-to-greet: 'Mona the Octocat'
-      # Use the output from the `hello` step
-      #- name: Get the output time
-        #run: echo "The time was ${{ steps.hello.outputs.time }}"
