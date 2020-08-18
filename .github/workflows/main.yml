@@ -8,13 +8,13 @@ jobs:
         uses: actions/checkout@v2
       - name: Build Image
         run: docker pull egaillardon/jmeter       
-      - name: Get Test Plan Name
-        uses: QAInsights/PerfAction@master
-        with:
-          test-plan-name: T01_HomePageLoad.jmx
+      - name: Test Plan Config
+        run: echo $TEST_PLAN_NAME
+        env:
+          TEST_PLAN_NAME: T01_HomePageLoad.jmx
       - name: Run Container
         run: |
-          docker run --interactive --rm --volume `pwd`:/jmeter egaillardon/jmeter --nongui --testfile {{ inputs.test-plan-name }} --logfile result.jtl                  
+          docker run --interactive --rm --volume `pwd`:/jmeter egaillardon/jmeter --nongui --testfile $TEST_PLAN_NAME --logfile result.jtl                  
       - name: Upload Results
         uses: actions/upload-artifact@v2
         with:
