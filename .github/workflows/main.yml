@@ -9,6 +9,7 @@ jobs:
       - name: Build Image
         run: docker pull egaillardon/jmeter       
       - name: Get Test Plan Name
+        uses: QAInsights/PerfAction@master
         with:
           test-plan-name: T01_HomePageLoad.jmx
       - name: Run Container
