@@ -13,7 +13,8 @@ jobs:
         run: docker pull justb4/jmeter        
       - name: Run image
         run: |
-          docker run justb4/jmeter:latest -n -t ./bin/examples/CSVSample.jmx -l mylog.log
+          docker run justb4/jmeter:latest -v /home/runner/work/PerfAction/PerfAction:/home/runner/work/PerfAction/PerfAction -n -t ./bin/examples/CSVSample.jmx -l mylog.log
+          ls
         #id: hello
         #with:
           #who-to-greet: 'Mona the Octocat'
