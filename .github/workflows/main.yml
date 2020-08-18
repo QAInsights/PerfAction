@@ -16,9 +16,10 @@ jobs:
           docker run --interactive --rm --volume `pwd`:/jmeter egaillardon/jmeter --nongui --testfile CSVSample.jmx --logfile result.jtl
           cat result.jtl                   
       - name: Download Results
-        run: |
-          ls
-        #id: hello
+        uses: actions/upload-artifact@v2
+        with:
+          name: my-artifact
+          path: result.jtl
         #with:
           #who-to-greet: 'Mona the Octocat'
       # Use the output from the `hello` step
