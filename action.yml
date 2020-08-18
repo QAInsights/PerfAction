@@ -1,11 +1,6 @@
 # action.yml
 name: 'JMeter Test'
 description: 'Run JMeter tests'
-inputs:
-  test-plan-name:  # id of input
-    description: 'which test plan to execute'
-    required: true
-    default: 'T01_HomePageLoad.jmx'
 runs:
   using: 'docker'
   image: 'docker://egaillardon/jmeter'
