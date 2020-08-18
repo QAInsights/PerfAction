@@ -6,7 +6,7 @@ jobs:
     name: A job to run JMeter script
     steps:      
       - name: Checkout
-        uses: actions/PerfAction@master
+        uses: QAInsights/PerfAction@master
         with:
           test-plan-name: T01_HomePageLoad.jmx
       - name: Upload Results
