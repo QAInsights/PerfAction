@@ -13,7 +13,7 @@ jobs:
         run: docker pull egaillardon/jmeter       
       - name: Run image
         run: |
-          docker run --interactive --rm --volume `pwd`:/jmeter egaillardon/jmeter --nongui --testfile Example.jmx --logfile result.jtl
+          docker run --interactive --rm --volume `pwd`:/jmeter egaillardon/jmeter --nongui --testfile T01_HomePageLoad.jmx --logfile result.jtl
           cat result.jtl                   
       - name: Upload Results
         uses: actions/upload-artifact@v2
