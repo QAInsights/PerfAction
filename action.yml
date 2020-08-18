@@ -9,5 +9,3 @@ inputs:
 runs:
   using: 'docker'
   image: 'docker://egaillardon/jmeter'
-  args:
-    - ${{ inputs.test-plan-name }}
