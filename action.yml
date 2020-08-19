@@ -5,7 +5,7 @@ author: NaveenKumar Namachivayam - https://qainsights.com
 
 branding:
   color: blue
-  icon: zap
+  icon: feather
 
 inputs:
   test-plan-path:
