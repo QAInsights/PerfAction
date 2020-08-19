@@ -3,13 +3,17 @@ name: JMeter Test
 description: Run JMeter tests
 author: NaveenKumar Namachivayam - https://qainsights.com
 
+branding:
+  color: blue
+  icon: zap
+
 inputs:
   test-plan-path:
     required: true
     description: jmeter test plan to execute
   args:
     required: false
-    description: Optional arguments
+    description: Optional arguments. For more details https://jmeter.apache.org/usermanual/get-started.html#non_gui
 
 runs:
   using: 'docker'
