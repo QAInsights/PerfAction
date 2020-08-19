@@ -7,7 +7,7 @@ java -cp /opt/apache/apache-jmeter-${JMETER_VERSION}/lib/ext/jmeter-plugins-mana
 
 chmod a+x ${JMETER_HOME}/bin/*.sh
 
-PluginManagerCMDInstaller.sh install \
+/opt/apache/apache-jmeter-${JMETER_VERSION}/bin/PluginManagerCMDInstaller.sh install \
 blazemeter-debugger=0.6
 
-PluginManagerCMDInstaller.sh status
+/opt/apache/apache-jmeter-${JMETER_VERSION}/bin/PluginManagerCMDInstaller.sh status
