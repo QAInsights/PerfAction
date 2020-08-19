@@ -10,7 +10,7 @@ jobs:
         uses: ./
         with:
           test-plan-path: T01_HomePageLoad.jmx
-          args: "--loglevel INFO" 
+          args: "" 
           
       - name: Upload Results
         uses: actions/upload-artifact@v2
