@@ -45,7 +45,8 @@ Following are the prerequisites for this GitHub Action:
 
 ## Download JMeter Test Results
 
-By default, this GitHub Action will log the performance statistics under `result.jtl`. After the execution, it will be uploaded to the GitHub artifacts.  
+By default, this GitHub Action will log the performance statistics under `result.jtl`. After the execution, it will be uploaded to the GitHub artifacts.
+    
 To download the JMeter results, go to your `Actions` and then click on the executed workflow, then click on `jmeter-results` link which will download the zip file.
 
-<placeholder to add the image>
+![Download-JMeter-Results](./assets/Download-JMeter-Results.jpg)
