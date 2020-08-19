@@ -10,7 +10,7 @@ jobs:
       - name: Run JMeter Tests
         uses: ./
         with:
-          test-plan-path: T01_HomePageLoad.jmx
+          test-plan-path: /TestPlans/T01_HomePageLoad.jmx
           args: "result.jtl" 
           
       - name: Upload Results
