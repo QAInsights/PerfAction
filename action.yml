@@ -23,4 +23,4 @@ runs:
   - "-e"
   - "-f"
   - "-o"
-  - "${{ inputs.args }}
+  - "${{ inputs.args }}"
