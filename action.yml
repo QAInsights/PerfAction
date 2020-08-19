@@ -13,7 +13,7 @@ inputs:
 
 runs:
   using: 'docker'
-  image: 'docker://egaillardon/jmeter'
+  image: 'Dockerfile'
   args:
   - "-n"
   - "-t"
