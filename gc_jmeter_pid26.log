@@ -1,0 +1,271 @@
+OpenJDK 64-Bit Server VM (25.212-b04) for linux-amd64 JRE (1.8.0_212-b04), built on May  4 2019 17:56:12 by "buildozer" with gcc 8.3.0
+Memory: 4k page, physical 2038880k(360416k free), swap 1048572k(1004796k free)
+CommandLine flags: -XX:CompressedClassSpaceSize=260046848 -XX:G1ReservePercent=20 -XX:+HeapDumpOnOutOfMemoryError -XX:InitialHeapSize=1073741824 -XX:MaxGCPauseMillis=100 -XX:MaxHeapSize=1073741824 -XX:MaxMetaspaceSize=268435456 -XX:+PrintAdaptiveSizePolicy -XX:+PrintGC -XX:+PrintGCApplicationConcurrentTime -XX:+PrintGCApplicationStoppedTime -XX:+PrintGCCause -XX:+PrintGCDateStamps -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:+PrintHeapAtGC -XX:+PrintTenuringDistribution -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseG1GC 
+ 0.015: [G1Ergonomics (Heap Sizing) expand the heap, requested expansion amount: 1073741824 bytes, attempted expansion amount: 1073741824 bytes]
+2020-08-19T01:02:57.827+0000: 0.386: Application time: 0.2901566 seconds
+2020-08-19T01:02:57.829+0000: 0.387: Total time for which application threads were stopped: 0.0001129 seconds, Stopping threads took: 0.0000153 seconds
+2020-08-19T01:02:57.850+0000: 0.408: Application time: 0.0211354 seconds
+2020-08-19T01:02:57.850+0000: 0.408: Total time for which application threads were stopped: 0.0001347 seconds, Stopping threads took: 0.0000675 seconds
+2020-08-19T01:02:57.990+0000: 0.548: Application time: 0.1396318 seconds
+2020-08-19T01:02:57.990+0000: 0.548: Total time for which application threads were stopped: 0.0001584 seconds, Stopping threads took: 0.0000374 seconds
+2020-08-19T01:02:58.038+0000: 0.597: Application time: 0.0485364 seconds
+2020-08-19T01:02:58.038+0000: 0.597: Total time for which application threads were stopped: 0.0002099 seconds, Stopping threads took: 0.0000156 seconds
+2020-08-19T01:02:58.307+0000: 0.866: Application time: 0.2688537 seconds
+2020-08-19T01:02:58.307+0000: 0.866: Total time for which application threads were stopped: 0.0001337 seconds, Stopping threads took: 0.0000135 seconds
+2020-08-19T01:02:58.331+0000: 0.890: Application time: 0.0224626 seconds
+{Heap before GC invocations=0 (full 0):
+ garbage-first heap   total 1048576K, used 52224K [0x00000000c0000000, 0x00000000c0102000, 0x0000000100000000)
+  region size 1024K, 51 young (52224K), 0 survivors (0K)
+ Metaspace       used 9984K, capacity 10188K, committed 10496K, reserved 1058816K
+  class space    used 1104K, capacity 1177K, committed 1280K, reserved 1048576K
+2020-08-19T01:02:58.331+0000: 0.890: [GC pause (G1 Evacuation Pause) (young)
+Desired survivor size 3670016 bytes, new threshold 15 (max 15)
+ 0.890: [G1Ergonomics (CSet Construction) start choosing CSet, _pending_cards: 0, predicted base time: 10.00 ms, remaining time: 90.00 ms, target pause time: 100.00 ms]
+ 0.890: [G1Ergonomics (CSet Construction) add young regions to CSet, eden: 51 regions, survivors: 0 regions, predicted young region time: 2587.31 ms]
+ 0.890: [G1Ergonomics (CSet Construction) finish choosing CSet, eden: 51 regions, survivors: 0 regions, old: 0 regions, predicted pause time: 2597.31 ms, target pause time: 100.00 ms]
+, 0.0119201 secs]
+   [Parallel Time: 6.6 ms, GC Workers: 2]
+      [GC Worker Start (ms): Min: 892.4, Avg: 892.4, Max: 892.5, Diff: 0.1]
+      [Ext Root Scanning (ms): Min: 1.5, Avg: 1.9, Max: 2.3, Diff: 0.8, Sum: 3.7]
+      [Update RS (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.0]
+         [Processed Buffers: Min: 0, Avg: 0.0, Max: 0, Diff: 0, Sum: 0]
+      [Scan RS (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.0]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 0.2, Max: 0.5, Diff: 0.5, Sum: 0.5]
+      [Object Copy (ms): Min: 4.1, Avg: 4.3, Max: 4.5, Diff: 0.4, Sum: 8.5]
+      [Termination (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.0]
+         [Termination Attempts: Min: 1, Avg: 1.0, Max: 1, Diff: 0, Sum: 2]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.0]
+      [GC Worker Total (ms): Min: 6.4, Avg: 6.4, Max: 6.4, Diff: 0.1, Sum: 12.8]
+      [GC Worker End (ms): Min: 898.8, Avg: 898.8, Max: 898.8, Diff: 0.0]
+   [Code Root Fixup: 0.0 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.1 ms]
+   [Other: 5.2 ms]
+      [Choose CSet: 2.1 ms]
+      [Ref Proc: 2.7 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.1 ms]
+      [Humongous Register: 0.0 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 0.0 ms]
+   [Eden: 51.0M(51.0M)->0.0B(45.0M) Survivors: 0.0B->6144.0K Heap: 51.0M(1024.0M)->5545.8K(1024.0M)]
+Heap after GC invocations=1 (full 0):
+ garbage-first heap   total 1048576K, used 5545K [0x00000000c0000000, 0x00000000c0102000, 0x0000000100000000)
+  region size 1024K, 6 young (6144K), 6 survivors (6144K)
+ Metaspace       used 9984K, capacity 10188K, committed 10496K, reserved 1058816K
+  class space    used 1104K, capacity 1177K, committed 1280K, reserved 1048576K
+}
+ [Times: user=0.01 sys=0.00, real=0.02 secs] 
+2020-08-19T01:02:58.360+0000: 0.919: Total time for which application threads were stopped: 0.0286171 seconds, Stopping threads took: 0.0000175 seconds
+2020-08-19T01:02:58.919+0000: 1.477: Application time: 0.5588117 seconds
+2020-08-19T01:02:58.919+0000: 1.478: Total time for which application threads were stopped: 0.0002052 seconds, Stopping threads took: 0.0000140 seconds
+2020-08-19T01:02:58.945+0000: 1.504: Application time: 0.0262257 seconds
+2020-08-19T01:02:58.945+0000: 1.504: Total time for which application threads were stopped: 0.0001638 seconds, Stopping threads took: 0.0000132 seconds
+2020-08-19T01:02:58.946+0000: 1.505: Application time: 0.0009635 seconds
+2020-08-19T01:02:58.947+0000: 1.505: Total time for which application threads were stopped: 0.0002086 seconds, Stopping threads took: 0.0000097 seconds
+2020-08-19T01:02:58.975+0000: 1.534: Application time: 0.0284711 seconds
+2020-08-19T01:02:58.975+0000: 1.534: Total time for which application threads were stopped: 0.0002066 seconds, Stopping threads took: 0.0000125 seconds
+2020-08-19T01:02:59.133+0000: 1.692: Application time: 0.1573246 seconds
+{Heap before GC invocations=1 (full 0):
+ garbage-first heap   total 1048576K, used 51625K [0x00000000c0000000, 0x00000000c0102000, 0x0000000100000000)
+  region size 1024K, 51 young (52224K), 6 survivors (6144K)
+ Metaspace       used 16647K, capacity 16892K, committed 17152K, reserved 1064960K
+  class space    used 1882K, capacity 1972K, committed 2048K, reserved 1048576K
+2020-08-19T01:02:59.133+0000: 1.692: [GC pause (G1 Evacuation Pause) (young)
+Desired survivor size 3670016 bytes, new threshold 15 (max 15)
+- age   1:    2298296 bytes,    2298296 total
+ 1.692: [G1Ergonomics (CSet Construction) start choosing CSet, _pending_cards: 0, predicted base time: 10.09 ms, remaining time: 89.91 ms, target pause time: 100.00 ms]
+ 1.692: [G1Ergonomics (CSet Construction) add young regions to CSet, eden: 45 regions, survivors: 6 regions, predicted young region time: 589.31 ms]
+ 1.692: [G1Ergonomics (CSet Construction) finish choosing CSet, eden: 45 regions, survivors: 6 regions, old: 0 regions, predicted pause time: 599.40 ms, target pause time: 100.00 ms]
+, 0.0126846 secs]
+   [Parallel Time: 10.2 ms, GC Workers: 2]
+      [GC Worker Start (ms): Min: 1692.9, Avg: 1692.9, Max: 1692.9, Diff: 0.0]
+      [Ext Root Scanning (ms): Min: 1.8, Avg: 1.9, Max: 2.0, Diff: 0.1, Sum: 3.8]
+      [Update RS (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.0]
+         [Processed Buffers: Min: 0, Avg: 0.0, Max: 0, Diff: 0, Sum: 0]
+      [Scan RS (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.1]
+      [Code Root Scanning (ms): Min: 0.1, Avg: 0.5, Max: 1.0, Diff: 0.9, Sum: 1.1]
+      [Object Copy (ms): Min: 7.1, Avg: 7.6, Max: 8.1, Diff: 1.0, Sum: 15.2]
+      [Termination (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.0]
+         [Termination Attempts: Min: 1, Avg: 1.0, Max: 1, Diff: 0, Sum: 2]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.0]
+      [GC Worker Total (ms): Min: 10.1, Avg: 10.1, Max: 10.1, Diff: 0.0, Sum: 20.1]
+      [GC Worker End (ms): Min: 1703.0, Avg: 1703.0, Max: 1703.0, Diff: 0.0]
+   [Code Root Fixup: 0.0 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.1 ms]
+   [Other: 2.4 ms]
+      [Choose CSet: 0.7 ms]
+      [Ref Proc: 1.2 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.2 ms]
+      [Humongous Register: 0.0 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 0.1 ms]
+   [Eden: 45.0M(45.0M)->0.0B(44.0M) Survivors: 6144.0K->7168.0K Heap: 50.4M(1024.0M)->7168.0K(1024.0M)]
+Heap after GC invocations=2 (full 0):
+ garbage-first heap   total 1048576K, used 7167K [0x00000000c0000000, 0x00000000c0102000, 0x0000000100000000)
+  region size 1024K, 7 young (7168K), 7 survivors (7168K)
+ Metaspace       used 16647K, capacity 16892K, committed 17152K, reserved 1064960K
+  class space    used 1882K, capacity 1972K, committed 2048K, reserved 1048576K
+}
+ [Times: user=0.01 sys=0.00, real=0.02 secs] 
+2020-08-19T01:02:59.161+0000: 1.719: Total time for which application threads were stopped: 0.0272500 seconds, Stopping threads took: 0.0000134 seconds
+2020-08-19T01:02:59.324+0000: 1.883: Application time: 0.1634043 seconds
+2020-08-19T01:02:59.324+0000: 1.883: Total time for which application threads were stopped: 0.0001612 seconds, Stopping threads took: 0.0000128 seconds
+2020-08-19T01:02:59.580+0000: 2.138: Application time: 0.2557035 seconds
+{Heap before GC invocations=2 (full 0):
+ garbage-first heap   total 1048576K, used 52223K [0x00000000c0000000, 0x00000000c0102000, 0x0000000100000000)
+  region size 1024K, 51 young (52224K), 7 survivors (7168K)
+ Metaspace       used 18609K, capacity 18924K, committed 19200K, reserved 1067008K
+  class space    used 2137K, capacity 2244K, committed 2304K, reserved 1048576K
+2020-08-19T01:02:59.580+0000: 2.139: [GC pause (G1 Evacuation Pause) (young)
+Desired survivor size 3670016 bytes, new threshold 2 (max 15)
+- age   1:    2088296 bytes,    2088296 total
+- age   2:    2149504 bytes,    4237800 total
+ 2.139: [G1Ergonomics (CSet Construction) start choosing CSet, _pending_cards: 0, predicted base time: 8.27 ms, remaining time: 91.73 ms, target pause time: 100.00 ms]
+ 2.139: [G1Ergonomics (CSet Construction) add young regions to CSet, eden: 44 regions, survivors: 7 regions, predicted young region time: 280.55 ms]
+ 2.139: [G1Ergonomics (CSet Construction) finish choosing CSet, eden: 44 regions, survivors: 7 regions, old: 0 regions, predicted pause time: 288.82 ms, target pause time: 100.00 ms]
+, 0.0199393 secs]
+   [Parallel Time: 17.1 ms, GC Workers: 2]
+      [GC Worker Start (ms): Min: 2139.3, Avg: 2139.3, Max: 2139.3, Diff: 0.0]
+      [Ext Root Scanning (ms): Min: 2.3, Avg: 2.3, Max: 2.4, Diff: 0.1, Sum: 4.7]
+      [Update RS (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.0]
+         [Processed Buffers: Min: 0, Avg: 0.0, Max: 0, Diff: 0, Sum: 0]
+      [Scan RS (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.0]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 0.6, Max: 1.1, Diff: 1.1, Sum: 1.1]
+      [Object Copy (ms): Min: 7.2, Avg: 10.9, Max: 14.6, Diff: 7.4, Sum: 21.8]
+      [Termination (ms): Min: 0.0, Avg: 3.2, Max: 6.5, Diff: 6.5, Sum: 6.5]
+         [Termination Attempts: Min: 1, Avg: 1.0, Max: 1, Diff: 0, Sum: 2]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.0]
+      [GC Worker Total (ms): Min: 17.0, Avg: 17.1, Max: 17.1, Diff: 0.0, Sum: 34.1]
+      [GC Worker End (ms): Min: 2156.4, Avg: 2156.4, Max: 2156.4, Diff: 0.0]
+   [Code Root Fixup: 0.0 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.0 ms]
+   [Other: 2.7 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 1.0 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.0 ms]
+      [Humongous Register: 0.1 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 0.1 ms]
+   [Eden: 44.0M(44.0M)->0.0B(46.0M) Survivors: 7168.0K->5120.0K Heap: 51.0M(1024.0M)->6723.0K(1024.0M)]
+Heap after GC invocations=3 (full 0):
+ garbage-first heap   total 1048576K, used 6722K [0x00000000c0000000, 0x00000000c0102000, 0x0000000100000000)
+  region size 1024K, 5 young (5120K), 5 survivors (5120K)
+ Metaspace       used 18609K, capacity 18924K, committed 19200K, reserved 1067008K
+  class space    used 2137K, capacity 2244K, committed 2304K, reserved 1048576K
+}
+ [Times: user=0.03 sys=0.00, real=0.03 secs] 
+2020-08-19T01:02:59.602+0000: 2.160: Total time for which application threads were stopped: 0.0220667 seconds, Stopping threads took: 0.0000332 seconds
+2020-08-19T01:02:59.656+0000: 2.215: Application time: 0.0542198 seconds
+2020-08-19T01:02:59.656+0000: 2.215: Total time for which application threads were stopped: 0.0002000 seconds, Stopping threads took: 0.0000497 seconds
+2020-08-19T01:02:59.741+0000: 2.300: Application time: 0.0852014 seconds
+2020-08-19T01:02:59.742+0000: 2.300: Total time for which application threads were stopped: 0.0002115 seconds, Stopping threads took: 0.0000364 seconds
+2020-08-19T01:02:59.762+0000: 2.320: Application time: 0.0201288 seconds
+2020-08-19T01:02:59.762+0000: 2.321: Total time for which application threads were stopped: 0.0002109 seconds, Stopping threads took: 0.0000323 seconds
+2020-08-19T01:02:59.876+0000: 2.434: Application time: 0.1136388 seconds
+2020-08-19T01:02:59.876+0000: 2.435: Total time for which application threads were stopped: 0.0003142 seconds, Stopping threads took: 0.0000369 seconds
+2020-08-19T01:03:00.131+0000: 2.690: Application time: 0.2544351 seconds
+2020-08-19T01:03:00.131+0000: 2.690: Total time for which application threads were stopped: 0.0002313 seconds, Stopping threads took: 0.0000519 seconds
+2020-08-19T01:03:00.136+0000: 2.695: Application time: 0.0046346 seconds
+ 2.695: [G1Ergonomics (Concurrent Cycles) request concurrent cycle initiation, reason: requested by GC cause, GC cause: Metadata GC Threshold]
+{Heap before GC invocations=3 (full 0):
+ garbage-first heap   total 1048576K, used 50754K [0x00000000c0000000, 0x00000000c0102000, 0x0000000100000000)
+  region size 1024K, 49 young (50176K), 5 survivors (5120K)
+ Metaspace       used 20777K, capacity 21020K, committed 21248K, reserved 1069056K
+  class space    used 2394K, capacity 2472K, committed 2560K, reserved 1048576K
+ 2.695: [G1Ergonomics (Concurrent Cycles) initiate concurrent cycle, reason: concurrent cycle initiation requested]
+2020-08-19T01:03:00.136+0000: 2.695: [GC pause (Metadata GC Threshold) (young) (initial-mark)
+Desired survivor size 3670016 bytes, new threshold 15 (max 15)
+- age   1:     628008 bytes,     628008 total
+- age   2:    1994520 bytes,    2622528 total
+ 2.695: [G1Ergonomics (CSet Construction) start choosing CSet, _pending_cards: 624, predicted base time: 13.19 ms, remaining time: 86.81 ms, target pause time: 100.00 ms]
+ 2.695: [G1Ergonomics (CSet Construction) add young regions to CSet, eden: 44 regions, survivors: 5 regions, predicted young region time: 130.35 ms]
+ 2.695: [G1Ergonomics (CSet Construction) finish choosing CSet, eden: 44 regions, survivors: 5 regions, old: 0 regions, predicted pause time: 143.54 ms, target pause time: 100.00 ms]
+, 0.0154635 secs]
+   [Parallel Time: 12.4 ms, GC Workers: 2]
+      [GC Worker Start (ms): Min: 2695.4, Avg: 2695.4, Max: 2695.4, Diff: 0.0]
+      [Ext Root Scanning (ms): Min: 1.2, Avg: 1.3, Max: 1.4, Diff: 0.2, Sum: 2.6]
+      [Update RS (ms): Min: 0.5, Avg: 0.5, Max: 0.5, Diff: 0.0, Sum: 0.9]
+         [Processed Buffers: Min: 2, Avg: 3.0, Max: 4, Diff: 2, Sum: 6]
+      [Scan RS (ms): Min: 0.3, Avg: 0.4, Max: 0.4, Diff: 0.1, Sum: 0.7]
+      [Code Root Scanning (ms): Min: 0.1, Avg: 0.1, Max: 0.1, Diff: 0.0, Sum: 0.2]
+      [Object Copy (ms): Min: 9.9, Avg: 9.9, Max: 10.0, Diff: 0.1, Sum: 19.9]
+      [Termination (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.0]
+         [Termination Attempts: Min: 1, Avg: 1.0, Max: 1, Diff: 0, Sum: 2]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.0]
+      [GC Worker Total (ms): Min: 12.2, Avg: 12.2, Max: 12.2, Diff: 0.0, Sum: 24.4]
+      [GC Worker End (ms): Min: 2707.6, Avg: 2707.6, Max: 2707.6, Diff: 0.0]
+   [Code Root Fixup: 0.0 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.1 ms]
+   [Other: 3.0 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 1.9 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.2 ms]
+      [Humongous Register: 0.0 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 0.0 ms]
+   [Eden: 44.0M(46.0M)->0.0B(44.0M) Survivors: 5120.0K->7168.0K Heap: 50.1M(1024.0M)->9795.0K(1024.0M)]
+Heap after GC invocations=4 (full 0):
+ garbage-first heap   total 1048576K, used 9795K [0x00000000c0000000, 0x00000000c0102000, 0x0000000100000000)
+  region size 1024K, 7 young (7168K), 7 survivors (7168K)
+ Metaspace       used 20777K, capacity 21020K, committed 21248K, reserved 1069056K
+  class space    used 2394K, capacity 2472K, committed 2560K, reserved 1048576K
+}
+ [Times: user=0.03 sys=0.00, real=0.04 secs] 
+2020-08-19T01:03:00.173+0000: 2.731: [GC concurrent-root-region-scan-start]
+2020-08-19T01:03:00.173+0000: 2.731: Total time for which application threads were stopped: 0.0367354 seconds, Stopping threads took: 0.0000614 seconds
+2020-08-19T01:03:00.191+0000: 2.750: [GC concurrent-root-region-scan-end, 0.0183704 secs]
+2020-08-19T01:03:00.191+0000: 2.750: [GC concurrent-mark-start]
+2020-08-19T01:03:00.222+0000: 2.781: [GC concurrent-mark-end, 0.0309617 secs]
+2020-08-19T01:03:00.222+0000: 2.781: Application time: 0.0492996 seconds
+2020-08-19T01:03:00.223+0000: 2.781: [GC remark 2020-08-19T01:03:00.223+0000: 2.782: [Finalize Marking, 0.0006188 secs] 2020-08-19T01:03:00.224+0000: 2.783: [GC ref-proc, 0.0009842 secs] 2020-08-19T01:03:00.226+0000: 2.784: [Unloading, 0.0151600 secs], 0.0201729 secs]
+ [Times: user=0.03 sys=0.01, real=0.03 secs] 
+2020-08-19T01:03:00.254+0000: 2.812: Total time for which application threads were stopped: 0.0317105 seconds, Stopping threads took: 0.0008617 seconds
+2020-08-19T01:03:00.255+0000: 2.813: Application time: 0.0011138 seconds
+2020-08-19T01:03:00.255+0000: 2.813: [GC cleanup 11M->11M(1024M), 0.0032390 secs]
+ [Times: user=0.00 sys=0.00, real=0.00 secs] 
+2020-08-19T01:03:00.260+0000: 2.818: Total time for which application threads were stopped: 0.0048591 seconds, Stopping threads took: 0.0000273 seconds
+2020-08-19T01:03:00.368+0000: 2.927: Application time: 0.1083983 seconds
+2020-08-19T01:03:00.368+0000: 2.927: Total time for which application threads were stopped: 0.0003229 seconds, Stopping threads took: 0.0000437 seconds
+2020-08-19T01:03:00.387+0000: 2.945: Application time: 0.0181227 seconds
+2020-08-19T01:03:00.387+0000: 2.945: Total time for which application threads were stopped: 0.0002970 seconds, Stopping threads took: 0.0000463 seconds
+2020-08-19T01:03:01.128+0000: 3.687: Application time: 0.7414462 seconds
+{Heap before GC invocations=5 (full 0):
+ garbage-first heap   total 1048576K, used 47683K [0x00000000c0000000, 0x00000000c0102000, 0x0000000100000000)
+  region size 1024K, 45 young (46080K), 7 survivors (7168K)
+ Metaspace       used 24964K, capacity 25516K, committed 25856K, reserved 1071104K
+  class space    used 2964K, capacity 3219K, committed 3328K, reserved 1048576K
+2020-08-19T01:03:01.129+0000: 3.688: [Full GC (System.gc())  47M->12M(1024M), 0.1199824 secs]
+   [Eden: 38.0M(44.0M)->0.0B(62.0M) Survivors: 7168.0K->0.0B Heap: 47.1M(1024.0M)->12.2M(1024.0M)], [Metaspace: 24964K->24964K(1071104K)]
+Heap after GC invocations=6 (full 1):
+ garbage-first heap   total 1048576K, used 12540K [0x00000000c0000000, 0x00000000c0102000, 0x0000000100000000)
+  region size 1024K, 0 young (0K), 0 survivors (0K)
+ Metaspace       used 24964K, capacity 25516K, committed 25856K, reserved 1071104K
+  class space    used 2964K, capacity 3219K, committed 3328K, reserved 1048576K
+}
+ [Times: user=0.20 sys=0.01, real=0.12 secs] 
+2020-08-19T01:03:01.250+0000: 3.809: Total time for which application threads were stopped: 0.1217584 seconds, Stopping threads took: 0.0000485 seconds
+2020-08-19T01:03:01.382+0000: 3.941: Application time: 0.1321852 seconds
+2020-08-19T01:03:01.383+0000: 3.941: Total time for which application threads were stopped: 0.0003406 seconds, Stopping threads took: 0.0000481 seconds
+2020-08-19T01:03:01.547+0000: 4.106: Application time: 0.1645815 seconds
+2020-08-19T01:03:01.547+0000: 4.106: Total time for which application threads were stopped: 0.0003251 seconds, Stopping threads took: 0.0000999 seconds
+2020-08-19T01:03:01.623+0000: 4.182: Application time: 0.0755735 seconds
+2020-08-19T01:03:01.623+0000: 4.182: Total time for which application threads were stopped: 0.0000903 seconds, Stopping threads took: 0.0000197 seconds
+2020-08-19T01:03:02.623+0000: 5.182: Application time: 1.0001047 seconds
+2020-08-19T01:03:02.626+0000: 5.184: Total time for which application threads were stopped: 0.0022907 seconds, Stopping threads took: 0.0022151 seconds
+2020-08-19T01:03:02.665+0000: 5.224: Application time: 0.0389736 seconds
+2020-08-19T01:03:02.665+0000: 5.224: Total time for which application threads were stopped: 0.0000464 seconds, Stopping threads took: 0.0000143 seconds
+2020-08-19T01:03:02.665+0000: 5.224: Application time: 0.0001284 seconds
+2020-08-19T01:03:02.665+0000: 5.224: Total time for which application threads were stopped: 0.0000251 seconds, Stopping threads took: 0.0000071 seconds
+Heap
+ garbage-first heap   total 1048576K, used 63740K [0x00000000c0000000, 0x00000000c0102000, 0x0000000100000000)
+  region size 1024K, 51 young (52224K), 0 survivors (0K)
+ Metaspace       used 29034K, capacity 29646K, committed 29952K, reserved 1075200K
+  class space    used 3466K, capacity 3742K, committed 3840K, reserved 1048576K
+2020-08-19T01:03:02.775+0000: 5.333: Application time: 0.1093187 seconds

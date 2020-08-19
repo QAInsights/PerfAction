@@ -2,8 +2,6 @@ on: [push]
 jobs:
   jmeter_job:
     runs-on: ubuntu-latest
-    env:
-      input: T01_HomePageLoad.jmx
     name: A job to run JMeter script
     steps:      
       - name: Checkout
