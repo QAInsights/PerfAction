@@ -19,8 +19,4 @@ runs:
   - "-t"
   - "${{ inputs.test-plan-path }}"
   - "-l"
-  - "testlog.log"
-  - "-e"
-  - "-f"
-  - "-o"
   - "${{ inputs.args }}"
