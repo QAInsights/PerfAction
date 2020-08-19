@@ -19,6 +19,6 @@ RUN apk --no-cache add curl ca-certificates openjdk9-jre && \
     chmod a+x /jmeter-plugin-install.sh
 
 # Downloading CMD Runner
-RUN jmeter-plugin-install.sh
+RUN /jmeter-plugin-install.sh
 
 ENTRYPOINT [ "/entrypoint.sh" ]
