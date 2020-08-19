@@ -7,8 +7,10 @@ echo "Downloaded Plugin Manager"
 java -cp /opt/apache/apache-jmeter-${JMETER_VERSION}/lib/ext/jmeter-plugins-manager-1.4.jar org.jmeterplugins.repository.PluginManagerCMDInstaller
 echo "Java Step"
 echo $(pwd)
-cd /opt/apache/apache-jmeter-${JMETER_VERSION}
+cd /opt/apache/apache-jmeter-${JMETER_VERSION}/bin/
 ls
+
+cat PluginsManagerCMD.sh
 
 chmod a+x ${JMETER_HOME}/bin/*.sh
 
