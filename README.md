@@ -9,6 +9,8 @@
 
 This GitHub Action helps to automate performance testing using [Apache JMeter](https://jmeter.apache.org/) and its [plugins](https://jmeter-plugins.org/).
 
+![PerfAction for JMeter](./assets/Banner.jpg)
+
 # How to use this GitHub Action?
 
 ## Prerequisites
@@ -46,7 +48,7 @@ Following are the prerequisites for this GitHub Action:
 ## Download JMeter Test Results
 
 By default, this GitHub Action will log the performance statistics under `result.jtl`. After the execution, it will be uploaded to the GitHub artifacts.
-    
+
 To download the JMeter results, go to your `Actions` and then click on the executed workflow, then click on `jmeter-results` link which will download the zip file.
 
 ![Download-JMeter-Results](./assets/Download-JMeter-Results.jpg)
