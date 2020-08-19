@@ -1,6 +1,6 @@
 # action.yml
-name: JMeter Test
-description: Run JMeter tests
+name: PerfAction for JMeter
+description: Run performance tests using JMeter test plan
 author: NaveenKumar Namachivayam - https://qainsights.com
 
 branding:
