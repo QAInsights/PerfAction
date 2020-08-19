@@ -23,10 +23,22 @@ Following are the prerequisites for this GitHub Action:
 
 ## Usage
 
+### Example #1 with no arguments
+
 ```
 - name: JMeter Test
   uses: QAInsights/PerfAction@v1.0
   with:
     test-plan-path: ./TestPlans/T01_HomePageLoad.jmx
     args: ""
+```
+
+### Example #2 with arguments
+
+```
+- name: JMeter Test
+  uses: QAInsights/PerfAction@v1.0
+  with:
+    test-plan-path: ./TestPlans/T01_HomePageLoad.jmx
+    args: "-H my.proxy.server -P 8000"
 ```
