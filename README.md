@@ -42,3 +42,10 @@ Following are the prerequisites for this GitHub Action:
     test-plan-path: ./TestPlans/T01_HomePageLoad.jmx
     args: "-H my.proxy.server -P 8000"
 ```
+
+## Download JMeter Test Results
+
+By default, this GitHub Action will log the performance statistics under `result.jtl`. After the execution, it will be uploaded to the GitHub artifacts.  
+To download the JMeter results, go to your `Actions` and then click on the executed workflow, then click on `jmeter-results` link which will download the zip file.
+
+<placeholder to add the image>
