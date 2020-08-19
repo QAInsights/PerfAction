@@ -2,7 +2,7 @@ on: [push]
 jobs:
   jmeter_job:
     runs-on: ubuntu-latest
-    name: A job to run JMeter script
+    name: JMeter Execution
     steps:      
       - name: Checkout
         uses: actions/checkout@v2
