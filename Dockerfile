@@ -15,7 +15,7 @@ RUN apk --no-cache add curl ca-certificates openjdk9-jre && \
     mv apache-jmeter-${JMETER_VERSION} /opt/apache && \
     rm /tmp/apache-jmeter-${JMETER_VERSION}.tgz && \
     rm -rf /var/cache/apk/* && \
-    chmod a+x /entrypoint.sh \
+    chmod a+x /entrypoint.sh && \
     chmod a+x /jmeter-plugin-install.sh
 
 # Downloading CMD Runner
