@@ -8,11 +8,12 @@ jobs:
     steps:      
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Build Image
-        run: docker pull egaillardon/jmeter       
-      - name: Run Container
-        run: |
-          docker run --interactive --rm --volume `pwd`:/jmeter egaillardon/jmeter --nongui --testfile ${{ env.input }} --logfile result.jtl                  
+      - name: Run JMeter Tests
+        uses: ./
+        with:
+          test-plan-path: T01_HomePageLoad.jmx
+          args: "--loglevel INFO" 
+          
       - name: Upload Results
         uses: actions/upload-artifact@v2
         with:

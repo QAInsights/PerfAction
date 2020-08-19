@@ -1,6 +1,26 @@
 # action.yml
-name: 'JMeter Test'
-description: 'Run JMeter tests'
+name: JMeter Test
+description: Run JMeter tests
+author: NaveenKumar Namachivayam - https://qainsights.com
+
+inputs:
+  test-plan-path:
+    required: true
+    description: jmeter test plan to execute
+  args:
+    required: false
+    description: Optional arguments
+
 runs:
   using: 'docker'
-  image: 'docker://egaillardon/jmeter'
+  image: 'docker://egaillardon/jmeter-plugins'
+  args:
+  - "-n"
+  - "-t"
+  - "${{ test-plan-path }}"
+  - "-l"
+  - "jmeter.log"
+  - "-e"
+  - "-f"
+  - "-o"
+  - "${{ inputs.args }}
