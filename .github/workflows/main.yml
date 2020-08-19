@@ -11,7 +11,7 @@ jobs:
         uses: ./
         with:
           test-plan-path: ./TestPlans/T01_HomePageLoad.jmx
-          args: "result.jtl" 
+          args: "" 
           
       - name: Upload Results
         uses: actions/upload-artifact@v2
