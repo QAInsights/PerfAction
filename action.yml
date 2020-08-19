@@ -19,7 +19,7 @@ runs:
   - "-t"
   - "${{ inputs.test-plan-path }}"
   - "-l"
-  - "jmeter.log"
+  - "testlog.log"
   - "-e"
   - "-f"
   - "-o"
