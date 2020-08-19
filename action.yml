@@ -17,7 +17,7 @@ runs:
   args:
   - "-n"
   - "-t"
-  - "${{ test-plan-path }}"
+  - "${{ inputs.test-plan-path }}"
   - "-l"
   - "jmeter.log"
   - "-e"
