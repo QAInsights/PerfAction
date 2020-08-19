@@ -10,9 +10,9 @@ echo $(pwd)
 cd /opt/apache/apache-jmeter-${JMETER_VERSION}/bin/
 ls
 
-chmod a+x ${JMETER_HOME}/bin/*.sh
+java -jar /opt/apache/apache-jmeter-${JMETER_VERSION}/cmdrunner-2.2.jar --tool org.jmeterplugins.repository.PluginManagerCMD %*
+
+chmod a+x /opt/apache/apache-jmeter-${JMETER_VERSION}/bin/*.sh
 
 /opt/apache/apache-jmeter-${JMETER_VERSION}/bin/PluginsManagerCMD.sh install \
 blazemeter-debugger=0.6
-
-/opt/apache/apache-jmeter-${JMETER_VERSION}/bin/PluginsManagerCMD.sh status
