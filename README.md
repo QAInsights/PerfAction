@@ -30,7 +30,7 @@ Following are the prerequisites for this GitHub Action:
 - name: JMeter Test
   uses: QAInsights/PerfAction@v1.0
   with:
-    test-plan-path: ./TestPlans/T01_HomePageLoad.jmx
+    test-plan-path: ./TestPlans/S01_SimpleExample/S01_SimpleExample.jmx
     args: ""
 ```
 
@@ -40,7 +40,7 @@ Following are the prerequisites for this GitHub Action:
 - name: JMeter Test
   uses: QAInsights/PerfAction@v1.0
   with:
-    test-plan-path: ./TestPlans/T01_HomePageLoad.jmx
+    test-plan-path: ./TestPlans/S01_SimpleExample/S01_SimpleExample.jmx
     args: "-H my.proxy.server -P 8000"
 ```
 

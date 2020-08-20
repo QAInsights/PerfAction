@@ -10,8 +10,8 @@ jobs:
       - name: Run JMeter Tests
         uses: ./
         with:
-          test-plan-path: ./TestPlans/S03_UDPExample/S03_UDPExample.jmx
-          args: "" 
+          test-plan-path: ./TestPlans/S01_SimpleExample/S01_SimpleExample.jmx
+          args: ""
           
       - name: Upload Results
         uses: actions/upload-artifact@v2
