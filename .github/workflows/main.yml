@@ -10,7 +10,7 @@ jobs:
       - name: Run JMeter Tests
         uses: ./
         with:
-          test-plan-path: ./TestPlans/S02_DataSetConfig/S02_DataSetConfig.jmx
+          test-plan-path: ./TestPlans/S03_UDPExample/S03_UDPExample.jmx
           args: "" 
           
       - name: Upload Results
