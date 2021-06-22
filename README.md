@@ -31,6 +31,11 @@ Following are the prerequisites for this GitHub Action:
   with:
     test-plan-path: ./TestPlans/S01_SimpleExample/S01_SimpleExample.jmx
     args: ""
+- name: Upload Results
+  uses: actions/upload-artifact@v2
+  with:
+    name: jmeter-results
+    path: result.jtl
 ```
 
 ### Example #2 with arguments
@@ -41,6 +46,12 @@ Following are the prerequisites for this GitHub Action:
   with:
     test-plan-path: ./TestPlans/S01_SimpleExample/S01_SimpleExample.jmx
     args: "-H my.proxy.server -P 8000"
+    
+- name: Upload Results
+  uses: actions/upload-artifact@v2
+  with:
+    name: jmeter-results
+    path: result.jtl
 ```
 
 ## Download JMeter Test Results
