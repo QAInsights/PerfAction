@@ -19,9 +19,12 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-  - "-n"
-  - "-t"
-  - "${{ inputs.test-plan-path }}"
-  - "-l"
-  - "result.jtl"
-  - "${{ inputs.args }}"
+    - '-n'
+    - '-t'
+    - '${{ inputs.test-plan-path }}'
+    - '-l'
+    - 'result.jtl'
+    - '-e'
+    - '-o'
+    - './HTML-RESULT'
+    - '${{ inputs.args }}'
