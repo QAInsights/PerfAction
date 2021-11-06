@@ -3,18 +3,24 @@ jobs:
   jmeter_job:
     runs-on: ubuntu-latest
     name: JMeter Test Execution
-    steps:      
+    steps:
       - name: Checkout
         uses: actions/checkout@v2
-        
+
       - name: Run JMeter Tests
         uses: ./
         with:
           test-plan-path: ./TestPlans/S01_SimpleExample/S01_SimpleExample.jmx
-          args: ""
-          
+          args: ''
+
       - name: Upload Results
         uses: actions/upload-artifact@v2
         with:
           name: jmeter-results
           path: result.jtl
+
+      - name: Upload HTML Result
+        uses: actions/upload-artifact@v2
+        with:
+          name: html-result
+          path: ./HTML-RESULT
