@@ -9,6 +9,8 @@ curl -L http://search.maven.org/remotecontent?filepath=kg/apc/cmdrunner/${JMETER
 echo "Downloading Plugin Manager"
 curl -L https://jmeter-plugins.org/get/ --output ${JMETER_HOME}/lib/ext/jmeter-plugins-manager-${JMETER_PLUGIN_MANAGER_VERSION}.jar
 
+ls -l ${JMETER_HOME}/lib/
+
 java -cp /opt/apache/apache-jmeter-${JMETER_VERSION}/lib/ext/jmeter-plugins-manager-${JMETER_PLUGIN_MANAGER_VERSION}.jar org.jmeterplugins.repository.PluginManagerCMDInstaller
 
 #cd /opt/apache/apache-jmeter-${JMETER_VERSION}/bin/
