@@ -16,4 +16,8 @@ java -jar ${JMETER_HOME}/lib/cmdrunner-${JMETER_CMD_RUNNER_VERSION}.jar --tool o
 
 chmod a+x ${JMETER_HOME}/bin/*.sh
 
+pwd
+
+ls -l ${JMETER_HOME}/bin/*.sh
+
 PluginsManagerCMD install jpgc-udp=0.4
