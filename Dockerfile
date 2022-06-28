@@ -4,7 +4,7 @@ LABEL Author="NaveenKumar Namachivayam"
 LABEL Website="https://qainsights.com"
 LABEL Description="Apache JMeter Dockerfile for GitHub Actions with JMeter Plugins"
 
-ENV JMETER_VERSION "5.4.3"
+ENV JMETER_VERSION "5.5"
 ENV JMETER_HOME "/opt/apache/apache-jmeter-${JMETER_VERSION}"
 ENV JMETER_BIN "${JMETER_HOME}/bin"
 ENV PATH "$PATH:$JMETER_BIN"
