@@ -12,9 +12,10 @@ jobs:
         with:
           test-plan-path: ./TestPlans/S01_SimpleExample/S01_SimpleExample.jmx
           args: ""
+          results-file: result.csv
           
       - name: Upload Results
         uses: actions/upload-artifact@v2
         with:
           name: jmeter-results
-          path: result.jtl
+          path: result.csv
