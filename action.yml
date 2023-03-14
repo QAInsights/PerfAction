@@ -14,6 +14,7 @@ inputs:
   results-file:
     required: false
     description: Where to store the results e.g., results.csv
+    default: result.jtl
   args:
     required: false
     description: Optional arguments. For more details https://jmeter.apache.org/usermanual/get-started.html#non_gui
