@@ -13,7 +13,7 @@ inputs:
     description: jmeter test plan to execute
   results-file:
     required: false
-    description: Where to store the results e.g., results.csv
+    description: Where to store the results e.g., result.csv
     default: result.jtl
   args:
     required: false
