@@ -23,6 +23,9 @@ Following are the prerequisites for this GitHub Action:
 * `args`
   * Optional
   * Additional arguments you can pass it to your test plan execution
+* `test-results``
+  * Optional
+  * If you want your result to have a different extension than jtl e.g., .csv
 
 ## Usage
 
@@ -41,7 +44,7 @@ Following are the prerequisites for this GitHub Action:
     path: result.jtl
 ```
 
-### Example #2 with arguments
+### Example #2 with arguments and a custom results file
 
 ```
 - name: JMeter Test
@@ -49,17 +52,18 @@ Following are the prerequisites for this GitHub Action:
   with:
     test-plan-path: ./TestPlans/S01_SimpleExample/S01_SimpleExample.jmx
     args: "-H my.proxy.server -P 8000"
+    test-results: result.csv
     
 - name: Upload Results
   uses: actions/upload-artifact@v2
   with:
     name: jmeter-results
-    path: result.jtl
+    path: result.csv
 ```
 
 ## Download JMeter Test Results
 
-By default, this GitHub Action will log the performance statistics under `result.jtl`. After the execution, it will be uploaded to the GitHub artifacts.
+By default, this GitHub Action will log the performance statistics under `result.jtl` if no other file is specified. After the execution, it will be uploaded to the GitHub artifacts.
 
 To download the JMeter results, go to your `Actions` and then click on the executed workflow, then click on `jmeter-results` link which will download the zip file.
 
