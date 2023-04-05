@@ -8,7 +8,7 @@
 
 This GitHub Action helps to automate performance testing using [Apache JMeter](https://jmeter.apache.org/) and its [plugins](https://jmeter-plugins.org/). 
 
-PerfAction also featured in LoadTestWorld 2021 conference.
+PerfAction also featured in LoadTestWorld 2021 conference..
 
 ![PerfAction for JMeter](./assets/Banner.jpg)
 
