@@ -6,6 +6,9 @@ jobs:
     steps:      
       - name: Checkout
         uses: actions/checkout@v3
+
+      - name: Create reports directory
+        run: mkdir reports
         
       - name: Run JMeter Tests
         uses: ./
