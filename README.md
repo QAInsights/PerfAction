@@ -64,7 +64,7 @@ make sure you create directory with the name where you want html report to be sa
 
 ```
 - name: Create reports directory
-        run: mkdir reports
+  run: mkdir reports
 
 - name: JMeter Test
   uses: QAInsights/PerfAction@v3.2
