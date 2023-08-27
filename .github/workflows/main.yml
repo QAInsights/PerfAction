@@ -5,16 +5,25 @@ jobs:
     name: JMeter Test Execution
     steps:      
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
+      
+      - name: generate report dir
+        run: mkdir reports
         
       - name: Run JMeter Tests
         uses: ./
         with:
           test-plan-path: ./TestPlans/S01_SimpleExample/S01_SimpleExample.jmx
-          args: ""
+          args: "-e -o ./reports/html/"
           
       - name: Upload Results
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: jmeter-results
           path: result.jtl
+
+      - name: Upload Html Reports
+        uses: actions/upload-artifact@v3
+        with:
+          name: jmeter-reports
+          path: reports          

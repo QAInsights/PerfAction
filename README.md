@@ -30,12 +30,12 @@ Following are the prerequisites for this GitHub Action:
 
 ```
 - name: JMeter Test
-  uses: QAInsights/PerfAction@v3.1
+  uses: QAInsights/PerfAction@v3.2
   with:
     test-plan-path: ./TestPlans/S01_SimpleExample/S01_SimpleExample.jmx
     args: ""
 - name: Upload Results
-  uses: actions/upload-artifact@v2
+  uses: actions/upload-artifact@v3
   with:
     name: jmeter-results
     path: result.jtl
@@ -45,7 +45,7 @@ Following are the prerequisites for this GitHub Action:
 
 ```
 - name: JMeter Test
-  uses: QAInsights/PerfAction@v3.1
+  uses: QAInsights/PerfAction@v3.2
   with:
     test-plan-path: ./TestPlans/S01_SimpleExample/S01_SimpleExample.jmx
     args: "-H my.proxy.server -P 8000"
@@ -55,6 +55,28 @@ Following are the prerequisites for this GitHub Action:
   with:
     name: jmeter-results
     path: result.jtl
+```
+### Example #3 with arguments to Generate HTML Reports
+
+```
+- name: JMeter Test
+  uses: QAInsights/PerfAction@v3.2
+  with:
+    test-plan-path: ./TestPlans/S01_SimpleExample/S01_SimpleExample.jmx
+    args: "-e -o ./reports/html/"
+    
+- name: Upload Results
+  uses: actions/upload-artifact@v3
+  with:
+    name: jmeter-results
+    path: result.jtl
+
+- name: Upload HTML Reports
+  uses: actions/upload-artifact@v3
+  with:
+    name: jmeter-html-reports
+    path: reports
+
 ```
 
 ## Download JMeter Test Results
