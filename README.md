@@ -60,7 +60,7 @@ Following are the prerequisites for this GitHub Action:
 ```
 ### Example #3 with arguments to Generate HTML Reports
 
-make sure you create directory with the name where you want html report to be saved.
+Make sure you create directory with the name where you want html report to be saved.
 
 ```
 - name: Create reports directory
