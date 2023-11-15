@@ -1,4 +1,4 @@
-# About PerfAction
+# 🚀 PerfAction 
 
 [![](https://img.shields.io/badge/dev.to-Actions%20Hackathon-blue)](https://dev.to/qainsights/perfaction-run-jmeter-performance-tests-191)
 [![saythanks](https://img.shields.io/badge/say-thanks-1EAEDB.svg)](https://saythanks.io/to/catch.nkn%40gmail.com)
@@ -8,13 +8,14 @@
 
 This GitHub Action helps to automate performance testing using [Apache JMeter](https://jmeter.apache.org/) and its [plugins](https://jmeter-plugins.org/). 
 
-PerfAction also featured in LoadTestWorld 2021 conference.
+PerfAction also featured in `LoadTestWorld 2021` conference.
 
 ![PerfAction for JMeter](./assets/Banner.jpg)
 
-# How to use this GitHub Action?
+# 🤔 How to use this GitHub Action?
 
 ## Prerequisites
+
 Following are the prerequisites for this GitHub Action:
 
 * `test-plan-path`
@@ -25,12 +26,13 @@ Following are the prerequisites for this GitHub Action:
   * Additional arguments you can pass it to your test plan execution
 * `test-results`
   * Optional
-  * If you want your result to have a different extension than jtl such as .csv , default value result.jtl
-## Usage
+  * If you want your result to have a different extension than jtl such as `.csv` default value `result.jtl`.
 
-### Example #1 with no arguments
+## 👇 Usage
 
-```
+### Example #1 with no arguments 
+
+```yaml
 - name: JMeter Test
   uses: QAInsights/PerfAction@v3.2
   with:
@@ -45,7 +47,7 @@ Following are the prerequisites for this GitHub Action:
 
 ### Example #2 with arguments
 
-```
+```yaml
 - name: JMeter Test
   uses: QAInsights/PerfAction@v3.2
   with:
@@ -60,9 +62,9 @@ Following are the prerequisites for this GitHub Action:
 ```
 ### Example #3 with arguments to Generate HTML Reports
 
-make sure you create directory with the name where you want html report to be saved.
+Please make sure that you create a directory where you want to generate HTML report.
 
-```
+```yaml
 - name: Create reports directory
   run: mkdir reports
 
@@ -83,10 +85,9 @@ make sure you create directory with the name where you want html report to be sa
   with:
     name: jmeter-html-reports
     path: reports
-
 ```
 
-## Download JMeter Test Results
+## 📥 Download JMeter Test Results
 
 By default, this GitHub Action will log the performance statistics under `result.jtl`. After the execution, it will be uploaded to the GitHub artifacts.
 

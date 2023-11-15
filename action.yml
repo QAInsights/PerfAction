@@ -10,7 +10,7 @@ branding:
 inputs:
   test-plan-path:
     required: true
-    description: jmeter test plan to execute
+    description: JMeter test plan to execute
   results-file:
     required: false
     description: Where to store the results e.g., result.csv
