@@ -11,6 +11,10 @@ inputs:
   test-plan-path:
     required: true
     description: jmeter test plan to execute
+  results-file:
+    required: false
+    description: Where to store the results e.g., result.csv
+    default: result.jtl    
   args:
     required: false
     description: Optional arguments. For more details https://jmeter.apache.org/usermanual/get-started.html#non_gui
@@ -23,5 +27,5 @@ runs:
   - "-t"
   - "${{ inputs.test-plan-path }}"
   - "-l"
-  - "result.jtl"
+  - "${{ inputs.results-file }}"
   - "${{ inputs.args }}"

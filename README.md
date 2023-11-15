@@ -23,19 +23,21 @@ Following are the prerequisites for this GitHub Action:
 * `args`
   * Optional
   * Additional arguments you can pass it to your test plan execution
-
+* `test-results`
+  * Optional
+  * If you want your result to have a different extension than jtl such as .csv , default value result.jtl
 ## Usage
 
 ### Example #1 with no arguments
 
 ```
 - name: JMeter Test
-  uses: QAInsights/PerfAction@v3.1
+  uses: QAInsights/PerfAction@v3.2
   with:
     test-plan-path: ./TestPlans/S01_SimpleExample/S01_SimpleExample.jmx
     args: ""
 - name: Upload Results
-  uses: actions/upload-artifact@v2
+  uses: actions/upload-artifact@v3
   with:
     name: jmeter-results
     path: result.jtl
@@ -45,7 +47,7 @@ Following are the prerequisites for this GitHub Action:
 
 ```
 - name: JMeter Test
-  uses: QAInsights/PerfAction@v3.1
+  uses: QAInsights/PerfAction@v3.2
   with:
     test-plan-path: ./TestPlans/S01_SimpleExample/S01_SimpleExample.jmx
     args: "-H my.proxy.server -P 8000"
@@ -55,6 +57,33 @@ Following are the prerequisites for this GitHub Action:
   with:
     name: jmeter-results
     path: result.jtl
+```
+### Example #3 with arguments to Generate HTML Reports
+
+make sure you create directory with the name where you want html report to be saved.
+
+```
+- name: Create reports directory
+  run: mkdir reports
+
+- name: JMeter Test
+  uses: QAInsights/PerfAction@v3.2
+  with:
+    test-plan-path: ./TestPlans/S01_SimpleExample/S01_SimpleExample.jmx
+    args: "-e -o ./reports/html/"
+    
+- name: Upload Results
+  uses: actions/upload-artifact@v3
+  with:
+    name: jmeter-results
+    path: result.jtl
+
+- name: Upload HTML Reports
+  uses: actions/upload-artifact@v3
+  with:
+    name: jmeter-html-reports
+    path: reports
+
 ```
 
 ## Download JMeter Test Results
