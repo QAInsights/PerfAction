@@ -43,6 +43,7 @@ Following are the prerequisites for this GitHub Action:
   with:
     name: jmeter-results
     path: result.jtl
+    if-no-files-found: error
 ```
 
 ### Example #2 with arguments
@@ -59,6 +60,7 @@ Following are the prerequisites for this GitHub Action:
   with:
     name: jmeter-results
     path: result.jtl
+    if-no-files-found: error
 ```
 ### Example #3 with arguments to Generate HTML Reports
 
@@ -79,12 +81,14 @@ Please make sure that you create a directory where you want to generate HTML rep
   with:
     name: jmeter-results
     path: result.jtl
+    if-no-files-found: error
 
 - name: Upload HTML Reports
   uses: actions/upload-artifact@v3
   with:
     name: jmeter-html-reports
     path: reports
+    if-no-files-found: error
 ```
 
 ## 📥 Download JMeter Test Results
