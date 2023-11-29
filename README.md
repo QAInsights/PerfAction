@@ -34,7 +34,7 @@ Following are the prerequisites for this GitHub Action:
 
 ```yaml
 - name: JMeter Test
-  uses: QAInsights/PerfAction@v3.2
+  uses: QAInsights/PerfAction@v5.6.2
   with:
     test-plan-path: ./TestPlans/S01_SimpleExample/S01_SimpleExample.jmx
     args: ""
@@ -50,13 +50,13 @@ Following are the prerequisites for this GitHub Action:
 
 ```yaml
 - name: JMeter Test
-  uses: QAInsights/PerfAction@v3.2
+  uses: QAInsights/PerfAction@v5.6.2
   with:
     test-plan-path: ./TestPlans/S01_SimpleExample/S01_SimpleExample.jmx
     args: "-H my.proxy.server -P 8000"
     
 - name: Upload Results
-  uses: actions/upload-artifact@v2
+  uses: actions/upload-artifact@v3
   with:
     name: jmeter-results
     path: result.jtl
@@ -71,7 +71,7 @@ Please make sure that you create a directory where you want to generate HTML rep
   run: mkdir reports
 
 - name: JMeter Test
-  uses: QAInsights/PerfAction@v3.2
+  uses: QAInsights/PerfAction@v5.6.2
   with:
     test-plan-path: ./TestPlans/S01_SimpleExample/S01_SimpleExample.jmx
     args: "-e -o ./reports/html/"
