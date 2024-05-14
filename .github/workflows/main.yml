@@ -13,7 +13,7 @@ jobs:
     - name: Run JMeter Tests
       uses: ./
       with:
-        test-plan-path: ./TestPlans/S01_SimpleExample/S01_SimpleExample.jmx
+        test-plan-path: ./TestPlans/S04_StressSmokeTest/smoke_stress_test.jmx
         args: "-e -o ./reports/html/"
         
     - name: Upload Results

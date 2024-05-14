@@ -10,7 +10,7 @@ ENV JMETER_BIN "${JMETER_HOME}/bin"
 ENV PATH "$PATH:$JMETER_BIN"
 ENV JMETER_CMD_RUNNER_VERSION "2.3"
 ENV JMETER_PLUGIN_MANAGER_VERSION "1.9"
-ENV JMETER_PLUGIN_INSTALL_LIST "jpgc-udp,jpgc-graphs-basic"
+ENV JMETER_PLUGIN_INSTALL_LIST "jpgc-udp,jpgc-graphs-basic,jpgc-casutg"
 
 COPY entrypoint.sh /entrypoint.sh
 COPY jmeter-plugin-install.sh /jmeter-plugin-install.sh
