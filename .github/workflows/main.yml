@@ -5,7 +5,7 @@ jobs:
     name: JMeter Test Execution
     steps:      
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Create reports directory
       run: mkdir reports
@@ -17,14 +17,14 @@ jobs:
         args: "-e -o ./reports/html/"
         
     - name: Upload Results
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: jmeter-results
         path: result.jtl
         if-no-files-found: error
 
     - name: Upload HTML Reports
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: jmeter-reports
         path: reports
