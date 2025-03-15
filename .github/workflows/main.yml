@@ -17,14 +17,14 @@ jobs:
         args: "-e -o ./reports/html/"
         
     - name: Upload Results
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: jmeter-results
         path: result.jtl
         if-no-files-found: error
 
     - name: Upload HTML Reports
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: jmeter-reports
         path: reports
