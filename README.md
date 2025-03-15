@@ -24,7 +24,7 @@ Following are the prerequisites for this GitHub Action:
 * `args`
   * Optional
   * Additional arguments you can pass it to your test plan execution
-* `test-results`
+* `results-file`
   * Optional
   * If you want your result to have a different extension than jtl such as `.csv` default value `result.jtl`.
 

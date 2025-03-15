@@ -17,17 +17,20 @@ ENV JMETER_VERSION="5.6.3" \
 COPY entrypoint.sh /entrypoint.sh
 COPY jmeter-plugin-install.sh /jmeter-plugin-install.sh
 
+# Fix line endings and make scripts executable
+RUN sed -i 's/\r$//' /entrypoint.sh && \
+    sed -i 's/\r$//' /jmeter-plugin-install.sh && \
+    chmod +x /entrypoint.sh /jmeter-plugin-install.sh
+
 # Install dependencies, download and setup JMeter in a single layer
-RUN apk --no-cache add curl ca-certificates openjdk17-jre && \
+RUN apk --no-cache add curl ca-certificates openjdk17-jre bash && \
     # Download and extract JMeter
     curl -L https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-${JMETER_VERSION}.tgz --output /tmp/apache-jmeter-${JMETER_VERSION}.tgz && \
     mkdir -p /opt/apache && \
     tar -zxf /tmp/apache-jmeter-${JMETER_VERSION}.tgz -C /tmp && \
     mv /tmp/apache-jmeter-${JMETER_VERSION} /opt/apache/ && \
-    # Make scripts executable
-    chmod +x /entrypoint.sh /jmeter-plugin-install.sh && \
     # Install JMeter plugins
-    /jmeter-plugin-install.sh && \
+    /bin/sh /jmeter-plugin-install.sh && \
     # Clean up
     rm -rf /tmp/* /var/cache/apk/*
 
@@ -47,11 +50,14 @@ ENV JMETER_VERSION="5.6.3" \
     PATH="$PATH:/opt/apache/apache-jmeter-5.6.3/bin"
 
 # Install only the required runtime dependencies
-RUN apk --no-cache add openjdk17-jre
+RUN apk --no-cache add openjdk17-jre bash
 
 # Copy JMeter and scripts from builder
 COPY --from=builder /opt/apache /opt/apache
 COPY --from=builder /entrypoint.sh /entrypoint.sh
 
+# Ensure script is executable in the final image
+RUN chmod +x /entrypoint.sh
+
 # Set entrypoint
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["/bin/sh", "/entrypoint.sh"]
